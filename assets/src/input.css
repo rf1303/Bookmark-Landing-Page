@@ -54,12 +54,10 @@
     --spacing-addsm: 12.5rem;
     --spacing-addxl: 17.5rem;
     --spacing-smwadd: 38.313rem;
+    --spacing-menuH: clamp(2rem, 6vw, 5rem);
 
 }
 
-.px-menuH {
-    padding-inline: clamp(2rem, 6vw, 5rem);
-}
 
 @media (min-width: 1024px) {
     .px-menuH {
