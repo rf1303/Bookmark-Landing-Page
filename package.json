@@ -1,0 +1,17 @@
+{
+    "name": "landingpage",
+    "version": "1.0.0",
+    "description": "Bookmark Landing Page",
+    "license": "ISC",
+    "author": "",
+    "type": "module",
+    "main": "tailwind.config.js",
+    "scripts": {
+        "build:styles": "npx @tailwindcss/cli -i ./assets/src/input.css -o ./assets/css/style.css --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "@tailwindcss/cli": "^4.1.11",
+        "tailwindcss": "^4.1.11"
+    }
+}

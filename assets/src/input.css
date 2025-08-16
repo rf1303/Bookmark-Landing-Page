@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+:root {
+    --bar-height: 4px;
+    --hamburger-gap: 4px;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+}
+
+@font-face {
+    font-family: 'rubik';
+    src: url('../fonts/rubik.woff2');
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+}
+
+@theme {
+    /* Colores */
+    /* --color-blue-950: hsl(229, 31%, 21%); */
+    --color-blue-950: #242a45;
+    --color-blue-600: hsl(231, 69%, 60%);
+    --color-blue-1500: #5267DF;
+    --color-grey-600: hsl(228, 12%, 41%);
+    --color-grey-50: hsl(0, 0%, 97%);
+    --color-red-400: hsl(0, 94%, 66%);
+    --color-html: #e44d26;
+    --color-htmlvia: #f16529;
+    --color-menu: #242A45;
+
+    /* Breakpoints */
+    --breakpoint-xs: 23.438em;
+
+    /* Fuentes */
+    --font-rubik: 'rubik', system-ui, sans-serif;
+    --text-bxs: .937rem;
+    --text-feat: 2rem;
+    --text-add: 1.25rem;
+    --text-addBtn: .875rem;
+
+    --tracking-aside: .144rem;
+
+    /* SPACES */
+    --h-11: .188rem;
+    --spacing-featureW: clamp(19.4375rem, 5.7457rem + 58.4184vw, 33.75rem);
+    --spacing-clamp02: clamp(19.4375rem, 11.1268rem + 35.4592vw, 28.125rem);
+    --spacing-clamp03: clamp(19.4375rem, 11.6051rem + 33.4184vw, 27.625rem);
+    --spacing-clamp04: clamp(3.0625rem, 2.644rem + 1.7857vw, 3.5rem);
+    --spacing-clamp05: clamp(38.1875rem, 18.6121rem + 50.5172vw, 56.5rem);
+    --spacing-29: 7.125rem;
+    --spacing-33: 8.25rem;
+    --spacing-18: 4.5rem;
+    --spacing-downxl: 56.5rem;
+    --spacing-addsm: 12.5rem;
+    --spacing-addxl: 17.5rem;
+    --spacing-smwadd: 38.313rem;
+
+}
+
+.px-menuH {
+    padding-inline: clamp(2rem, 6vw, 5rem);
+}
+
+@media (min-width: 1024px) {
+    .px-menuH {
+        padding-inline: 0;
+    }
+}
+
+.line {
+    transition: .5s ease-in-out;
+    transform-origin: left;
+}
+
+.btn__label:focus-visible {
+    .line {
+        border: 1px solid #fff;
+        box-shadow: 0 0 0 1px #242a45;
+    }
+}
+
+
+#btn-open:checked~label .top {
+    transform: rotate(45deg);
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+    background-color: #fff;
+}
+
+#btn-open:checked~label .middle {
+    opacity: 0;
+}
+
+#btn-open:checked~label .bottom {
+    transform: rotate(-45deg);
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+    background-color: #fff;
+}
+
+#btn-open:checked~label {
+    @apply fill-amber-50;
+}
+
+.aside {
+    background-color: hsl(229, 25%, 25%, .9);
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Chrome, Safari */
+summary::marker {
+    display: none;
+}
+
+.error__mail {
+    translate: 0;
+}
+
+.error__visible {
+    opacity: 1;
+}
+
+.error__outline {
+    outline: .125rem solid  hsl(0, 94%, 66%);
+}
+
+
+.freq__detail[open] .freq__text {
+  opacity: 1;
+  transition: opacity .9s ease, transform .9s ease;
+  transform: translateY(0);
+  @starting-style {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+}
+.freq__detail .freq__text {
+  transition: opacity .9s ease, transform .9s ease, display .9s allow-discrete;
+  starting-style: allow-discrete;
+  opacity: 0;
+  transform: translateY(0);
+}
+
+
+/* .features__wrap { */
+/* } */
+/* features__title features__wrap*/
