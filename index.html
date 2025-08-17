@@ -17,7 +17,8 @@
 <body class="font-rubik bg-blue-50  overflow-x-hidden ">
 
 
-    <header class="max-w-[90rem] px-menuH flex items-center justify-between pt-10 lg:pt-12 lg:px-8 lg:max-w-[69rem] lg:mx-auto ">
+    <header
+        class="max-w-[90rem] px-menuH flex items-center justify-between pt-10 lg:pt-12 lg:px-8 lg:max-w-[69rem] lg:mx-auto ">
         <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg"
             class="z-40 bookmark__img text-blue-950 transition-all duration-500 ease-linear">
             <g fill="none" fill-rule="evenodd">
@@ -33,7 +34,7 @@
         </svg>
         <section class="">
             <input type="checkbox" name="btnopen" id="btn-open" class="peer sr-only " />
-            <label for="btn-open" type="button"
+            <label for="btn-open" role="button"
                 class="btn__label relative w-6  grid grid-cols-1 gap-1  z-40 cursor-pointer group lg:sr-only"
                 aria-expanded="false" aria-labelledby="nav-label" aria-controls="primary-navigation">
                 <span
@@ -80,7 +81,7 @@
                 </ul>
                 <ul class="self-end flex items-center justify-center gap-8 lg:hidden">
                     <li>
-                        <a href="#" class="">
+                        <a href="#" aria-labelledby="red social Facebook">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 class="text-white hover:text-red-400 cursor-pointer">
                                 <path fill="currentColor" fill-rule="evenodd"
@@ -89,7 +90,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="">
+                        <a href="#" aria-labelledby="red social Twiter">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"
                                 class="text-white hover:text-red-400 cursor-pointer">
                                 <path fill="currentColor" fill-rule="evenodd"
@@ -101,328 +102,339 @@
             </nav>
         </section>
     </header>
-    <section class=" pt-20 grid gap-12 xl:grid-cols-[33.75rem_45.938rem] xl:justify-end xl:gap-0">
-        <section
-            class="relative w-full h-full min-h-[16rem]  grid grid-cols-1 content-start  justify-center sm:max-h-[30.375rem] xl:order-2 ">
-            <div
-                class="absolute right-0 bottom-0 w-4/5 max-w-[31.25rem]  h-4/5 max-h-[22rem] bg-blue-600 rounded-l-full  z-10 ">
-            </div>
-            <div class="w-[83%] max-w-[36.125rem]  h-full max-h-96 z-20 mx-auto sm:mb-24">
-                <img src="./assets/images/illustratorHero.svg" class="" loading="lazy" decoding="async">
-            </div>
-        </section>
-        <section
-            class="w-10/12 max-w-[33.75rem] grid grid-cols-1  gap-6 mx-auto text-blue-950 text-center lg:w-full  lg:h-fit lg:self-center lg:justify-items-start lg:text-start xl:order-1">
-            <h1 class="text-3xl  font-medium lg:text-5xl lg:leading-[1.1] ">A Simple Bookmark Manager</h1>
-            <p class="text-bxs  opacity-50 font-[400] lg:text-lg/normal">
-                A clean and simple interface to organize your favourite websites. Open a new
-                browser tab and see your sites load instantly. Try it for free.
-            </p>
-            <section class="flex items-center justify-between gap-4 text-bxs font-medium sm:justify-center">
-                <button type="button"
-                    class="p-3  rounded-sm bg-blue-600  text-white hover:cursor-pointer hover:bg-transparent focus:bg-transparent hover:outline-2 focus:outline-2 hover:outline-blue-600 focus:outline-blue-600 hover:text-blue-600 focus:text-blue-600 lg:px-5 ">Get
-                    it on Chrome</button>
-                <button type="button"
-                    class="p-3  text-blue-950/75 hover:outline-2 hover:outline-blue-950/75 rounded-sm hover:cursor-pointer lg:px-5">Get
-                    it on Firefox</button>
+    <main>
+        <section class=" pt-20 grid gap-12 xl:grid-cols-[33.75rem_45.938rem] xl:justify-end xl:gap-0">
+            <section
+                class="relative w-full h-full min-h-[16rem]  grid grid-cols-1 content-start  justify-center sm:max-h-[30.375rem] xl:order-2 ">
+                <div
+                    class="absolute right-0 bottom-0 w-4/5 max-w-[31.25rem]  h-4/5 max-h-[22rem] bg-blue-600 rounded-l-full  z-10 ">
+                </div>
+                <div class="w-[83%] max-w-[36.125rem]  h-full max-h-96 z-20 mx-auto sm:mb-24">
+                    <img src="./assets/images/illustratorHero.svg" role="presentation" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <section
+                class="w-10/12 max-w-[33.75rem] grid grid-cols-1  gap-6 mx-auto text-blue-950 text-center lg:w-full  lg:h-fit lg:self-center lg:justify-items-start lg:text-start xl:order-1">
+                <h1 class="text-3xl  font-medium lg:text-5xl lg:leading-[1.1] ">A Simple Bookmark Manager</h1>
+                <p class="text-bxs  opacity-50 font-[400] lg:text-lg/normal">
+                    A clean and simple interface to organize your favourite websites. Open a new
+                    browser tab and see your sites load instantly. Try it for free.
+                </p>
+                <section class="flex items-center justify-between gap-4 text-bxs font-medium sm:justify-center">
+                    <button type="button"
+                        class="p-3  rounded-sm bg-blue-600  text-white hover:cursor-pointer hover:bg-transparent focus:bg-transparent hover:outline-2 focus:outline-2 hover:outline-blue-600 focus:outline-blue-600 hover:text-blue-600 focus:text-blue-600 lg:px-5 ">Get
+                        it on Chrome</button>
+                    <button type="button"
+                        class="p-3  text-blue-950/75 hover:outline-2 hover:outline-blue-950/75 rounded-sm hover:cursor-pointer lg:px-5">Get
+                        it on Firefox</button>
+                </section>
             </section>
         </section>
-    </section>
 
-    <!-- SECTION FEATURES -->
+        <!-- SECTION FEATURES -->
 
-    <section class="grid grid-cols-1 gap-4 place-content-center mt-32 mb-8 mx-auto w-featureW ">
-        <h2 class="text-3xl text-blue-950 text-center font-medium sm:text-feat ">Features</h2>
-        <p class="text-bxs/relaxed text-blue-950/55 text-center sm:text-lg ">
-            Our aim is to make it quick and easy for you to access your favourite websites.
-            Your bookmarks sync between your devices so you can access them on the go.
-        </p>
-    </section>
+        <section class="grid grid-cols-1 gap-4 place-content-center mt-32 mb-8 mx-auto w-featureW ">
+            <h2 class="text-3xl text-blue-950 text-center font-medium sm:text-feat ">Features</h2>
+            <p class="text-bxs/relaxed text-blue-950/55 text-center sm:text-lg ">
+                Our aim is to make it quick and easy for you to access your favourite websites.
+                Your bookmarks sync between your devices so you can access them on the go.
+            </p>
+        </section>
 
-    <section
-        class="mt-12  grid grid-cols-1 items-center justify-items-center md:grid-cols-3 xl:max-w-[730px] xl:mx-auto ">
-        <div class="flex flex-col items-center">
-            <input type="radio" name="features" id="features-radio-1" class="peer sr-only" data-features="simple"
-                checked />
-            <label for="features-radio-1"
-                class="text-base text-blue-950/75 relative my-4  peer-checked:text-blue-950  hover:text-red-400" aria-selected="true">Simple
-                Bookmarking</label>
-            <span
-                class="w-[115%] h-1 bg-transparent rounded-full transition-all duration-400 ease-in-out peer-checked:bg-red-400 "></span>
-        </div>
-        <div class="flex flex-col items-center ">
-            <input type="radio" name="features" id="features-radio-2" class="peer sr-only" data-features="speedy" />
-            <label for="features-radio-2"
-                class="text-base my-4 text-blue-950/75 peer-checked:text-blue-950 hover:text-red-400" aria-selected="false">Speedy
-                Searching</label>
-            <span
-                class="w-[115%] h-1 bg-transparent rounded-full transition-all duration-400 ease-in-out peer-checked:bg-red-400 "></span>
-        </div>
-        <div class="flex flex-col items-center  ">
-            <input type="radio" name="features" id="features-radio-3" class="peer sr-only" data-features="easy" />
-            <label for="features-radio-3"
-                class="text-base my-4 text-blue-950/75 peer-checked:text-blue-950 hover:text-red-400" aria-selected="false">Easy
-                Sharing</label>
-            <span
-                class="w-[115%] h-1 bg-transparent rounded-full transition-all duration-400 ease-in-out peer-checked:bg-red-400 "></span>
-        </div>
-    </section>
-
-    <section id="simple"
-        class="w-full max-w-[90rem] mx-auto mt-11 grid grid-cols-1 place-items-center xl:grid-cols-[44.063rem_28.125rem] xl:gap-[7.5rem] xl:mt-18 ">
         <section
-            class="relative w-full h-full min-h-[16rem]  grid grid-cols-1 content-start  justify-center sm:max-h-[30.375rem]  ">
-            <div class="absolute left-0 bottom-0 w-4/5   h-4/5 max-h-[22rem] bg-blue-600 rounded-r-full  z-10 ">
+            class="mt-12  grid grid-cols-1 items-center justify-items-center md:grid-cols-3 xl:max-w-[730px] xl:mx-auto ">
+            <div class="flex flex-col items-center">
+                <input type="radio" name="features" id="features-radio-1" class="peer sr-only" data-features="simple"
+                    checked />
+                <label for="features-radio-1"
+                    class="text-base text-blue-950/75 relative my-4  peer-checked:text-blue-950  hover:text-red-400">Simple
+                    Bookmarking</label>
+                <span
+                    class="w-[115%] h-1 bg-transparent rounded-full transition-all duration-400 ease-in-out peer-checked:bg-red-400 "></span>
             </div>
-            <div
-                class="w-[83%] max-w-[33.5rem]  h-full max-h-96 z-20 mx-auto sm:mb-24 xl:w-full xl:mx-0 xl:justify-self-end xl:max-h-[27.625rem] ">
-                <img src="./assets/images/illustration-features-tab-1.svg" class="" loading="lazy" decoding="async">
+            <div class="flex flex-col items-center ">
+                <input type="radio" name="features" id="features-radio-2" class="peer sr-only" data-features="speedy" />
+                <label for="features-radio-2"
+                    class="text-base my-4 text-blue-950/75 peer-checked:text-blue-950 hover:text-red-400">Speedy
+                    Searching</label>
+                <span
+                    class="w-[115%] h-1 bg-transparent rounded-full transition-all duration-400 ease-in-out peer-checked:bg-red-400 "></span>
+            </div>
+            <div class="flex flex-col items-center  ">
+                <input type="radio" name="features" id="features-radio-3" class="peer sr-only" data-features="easy" />
+                <label for="features-radio-3"
+                    class="text-base my-4 text-blue-950/75 peer-checked:text-blue-950 hover:text-red-400">Easy
+                    Sharing</label>
+                <span
+                    class="w-[115%] h-1 bg-transparent rounded-full transition-all duration-400 ease-in-out peer-checked:bg-red-400 "></span>
             </div>
         </section>
-        <div
-            class="mt-16 mx-auto w-clamp02 grid grid-cols-1 gap-4 place-items-center  xl:justify-items-start xl:h-fit xl:gap-6 xl:m-0 xl:self-center">
-            <h3 class="w-48 text-3xl/snug text-blue-950 text-center font-medium xl:w-full xl:text-start ">Bookmark in
-                one click</h3>
-            <p class="text-bxs text-blue-950/50 text-center xl:text-start">
-                Organize your bookmarks however you like. Our simple drag-and-drop interface
-                gives you complete control over how you manage your favourite sites.
-            </p>
-            <button
-                class="py-3 w-29 bg-blue-600 hover:bg-white focus:bg-white text-bxs text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md transition-colors duration-200 ">
-                More info
-            </button>
-        </div>
-    </section>
 
-    <!-- RADIO BUTTONS ITEMS 2 and 3 -->
-
-    <section id="speedy"
-        class=" hidden  w-full max-w-[90rem] mx-auto mt-11 grid grid-cols-1 place-items-center xl:grid-cols-[44.063rem_28.125rem] xl:gap-[7.5rem] xl:mt-18 ">
-        <section
-            class="relative w-full h-full min-h-[16rem]  grid grid-cols-1 content-start  justify-center sm:max-h-[27.188rem] ">
-            <div class="absolute left-0 bottom-0 w-4/5 sm:w-2/3 lg:4/5  h-4/5 max-h-[22rem] bg-blue-600 rounded-r-full  z-10 ">
-            </div>
-            <div
-                class="w-[83%] max-w-[29.25rem]  h-full max-h-96 z-20 mx-auto sm:mb-24 xl:w-full xl:mx-0 xl:justify-self-end xl:max-h-[27.625rem] ">
-                <img src="./assets/images/illustration-features-tab-2.svg" class="" loading="lazy" decoding="async">
-            </div>
-        </section>
-        <div
-            class="mt-16 mx-auto w-clamp02 grid grid-cols-1 gap-4 items-center justify-items-center xl:justify-items-start xl:h-fit xl:gap-6 xl:m-0 xl:self-center">
-            <h3 class="w-48 text-3xl/snug text-blue-950 text-center font-medium xl:w-full xl:text-start">Intelligent
-                search</h3>
-            <p class="text-bxs text-blue-950/50 text-center xl:text-start">
-                Our powerful search feature will help you find saved sites in no time at all.
-                No need to trawl through all of your bookmarks.
-            </p>
-
-            <button
-                class="py-3 w-29 bg-blue-600 hover:bg-white focus:bg-white text-bxs text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md transition-colors duration-200 ">
-                More info
-            </button>
-        </div>
-    </section>
-
-    <!-- ##########  ITEMS 3  ############V -->
-
-    <section id="easy"
-        class=" hidden w-full max-w-[90rem] mx-auto mt-11 grid grid-cols-1 place-items-center xl:grid-cols-[44.063rem_28.125rem] xl:gap-[7.5rem] xl:mt-18 ">
-        <section
-            class="relative w-full h-full min-h-[16rem]  grid grid-cols-1 content-start  justify-center sm:max-h-[27.188rem] ">
-            <div class="absolute left-0 bottom-0 w-11/12  sm:w-2/3 lg:11/12  h-4/5 max-h-[22rem] bg-blue-600 rounded-r-full  z-10 ">
-            </div>
-            <div
-                class="w-[83%] max-w-[27.5rem]  h-full max-h-96 z-20 mx-auto sm:mb-24 xl:w-full xl:mx-0 xl:justify-self-end xl:max-h-[27.625rem]">
-                <img src="./assets/images/illustration-features-tab-3.svg" class="" loading="lazy" decoding="async">
-            </div>
-        </section>
-        <div
-            class="mt-16 mx-auto w-clamp02 grid grid-cols-1 gap-4 items-center justify-items-center xl:justify-items-start xl:h-fit xl:gap-6 xl:m-0 xl:self-center">
-            <h3 class="w-48 text-3xl/snug text-blue-950 text-center font-medium xl:w-full xl:text-start">Share your
-                bookmarks</h3>
-            <p class="text-bxs text-blue-950/50 text-center xl:text-start">
-                Easily share your bookmarks and collections with others. Create a shareable
-                link that you can send at the click of a button.
-            </p>
-
-            <button
-                class="py-3 w-29 bg-blue-600 hover:bg-white focus:bg-white text-bxs text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md transition-colors duration-200 ">
-                More info
-            </button>
-        </div>
-    </section>
-    </section>
-
-    <!-- SECTION DOWNLOAD -->
-
-    <section
-        class="w-full mt-33 mx-auto grid grid-cols-1 gap-10 sm:max-w-smwadd sm:w-clamp05 sm:gap-16 xl:max-w-downxl xl:h-full">
-        <div class="w-featureW  mx-auto grid justify-items-center items-center gap-4">
-            <h3 class="text-3xl text-blue-950 font-medium text-center">Download the extension</h3>
-            <p class="text-bxs/relaxed text-blue-950/50 text-center">
-                We’ve got more browsers in the pipeline. Please do let us know if you’ve
-                got a favourite you’d like us to prioritize.
-            </p>
-        </div>
-        <!-- SECTION ADD -->
-        <section
-            class="h-full  transition-all duration-300 ease-in-out grid grid-cols-1  gap-10 sm:grid-cols-3 sm:gap-2 xl:gap-8 lg:grid-cols-[repeat(3,minmax(17.5rem,1fr)] lg:gap-8 lg:h-[28.188rem] ">
-            <div
-                class="w-full max-w-addxl mx-auto py-8 flex flex-col items-center justify-center gap-6 sm:gap-4 lg:gap-6 self-start ">
-
-                <img src="./assets/images/logo-chrome.svg" alt="" class="mb-2 " loading="lazy" decoding="async"
-                    width="101px" height="100px">
-                <div class="">
-                    <h3 class="text-2xl text-blue-950 font-medium sm:text-add lg:text-2xl lg:mb-2">Add to Chrome</h3>
-                    <p class="text-bxs text-blue-950/50 text-center">Minimum version 62</p>
+        <section id="simple"
+            class="w-full max-w-[90rem] mx-auto mt-11 grid grid-cols-1 place-items-center xl:grid-cols-[44.063rem_28.125rem] xl:gap-[7.5rem] xl:mt-18 ">
+            <section
+                class="relative w-full h-full min-h-[16rem]  grid grid-cols-1 content-start  justify-center sm:max-h-[30.375rem]  ">
+                <div class="absolute left-0 bottom-0 w-4/5   h-4/5 max-h-[22rem] bg-blue-600 rounded-r-full  z-10 ">
                 </div>
-                <span class=""><img src="./assets/images/bg-dots.svg" alt="" class="" loading="lazy"
-                        decoding="async"></span>
-                <button
-                    class="px-6 py-3 bg-blue-600 hover:bg-white focus:bg-white text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md transition-colors duration-200 sm:text-addBtn sm:px-2 lg:px-8">
-                    Add & Install Extension
-                </button>
-            </div>
-            <div
-                class="w-full max-w-[17.5rem] mx-auto py-8 grid grid-cols-1 items-center justify-items-center gap-6 sm:gap-4 lg:gap-6 lg:self-center">
-                <img src="./assets/images/logo-firefox.svg" alt="" class="mb-2" loading="lazy" decoding="async"
-                    width="105px" height="100px">
-                <div class="">
-                    <h3 class="text-2xl text-blue-950 font-medium sm:text-add lg:text-2xl lg:mb-2">Add to Firefox</h3>
-                    <p class="text-bxs text-blue-950/50 text-center">Minimum version 55</p>
+                <div
+                    class="w-[83%] max-w-[33.5rem]  h-full max-h-96 z-20 mx-auto sm:mb-24 xl:w-full xl:mx-0 xl:justify-self-end xl:max-h-[27.625rem] ">
+                    <img src="./assets/images/illustration-features-tab-1.svg" role="presentation" loading="lazy"
+                        decoding="async">
                 </div>
-                <span class=""><img src="./assets/images/bg-dots.svg" alt="" class="" loading="lazy"
-                        decoding="async"></span>
-                <button
-                    class="px-6 py-3 bg-blue-600 hover:bg-white focus:bg-white text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md transition-colors duration-200 sm:text-addBtn sm:px-2 lg:px-8">
-                    Add & Install Extension
-                </button>
-            </div>
+            </section>
             <div
-                class="w-full max-w-[17.5rem] mx-auto py-8 grid grid-cols-1 items-center justify-items-center gap-6 sm:gap-4 lg:gap-6 lg:self-end">
-                <img src="./assets/images/logo-opera.svg" alt="" class="mb-2" loading="lazy" decoding="async"
-                    width="96px" height="100px">
-                <div class="">
-                    <h3 class="text-2xl text-blue-950 font-medium sm:text-add lg:text-2xl lg:mb-2">Add to Opera</h3>
-                    <p class="text-bxs text-blue-950/50 text-center">Minimum version 46</p>
-                </div>
-                <span class=""><img src="./assets/images/bg-dots.svg" alt="" class="" loading="lazy"
-                        decoding="async"></span>
+                class="mt-16 mx-auto w-clamp02 grid grid-cols-1 gap-4 place-items-center  xl:justify-items-start xl:h-fit xl:gap-6 xl:m-0 xl:self-center">
+                <h3 class="w-48 text-3xl/snug text-blue-950 text-center font-medium xl:w-full xl:text-start ">Bookmark
+                    in
+                    one click</h3>
+                <p class="text-bxs text-blue-950/50 text-center xl:text-start">
+                    Organize your bookmarks however you like. Our simple drag-and-drop interface
+                    gives you complete control over how you manage your favourite sites.
+                </p>
                 <button
-                    class="px-6 py-3 bg-blue-600 hover:bg-white focus:bg-white text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md transition-colors duration-200 sm:text-addBtn sm:px-2 lg:px-8">
-                    Add & Install Extension
+                    class="py-3 w-29 bg-blue-600 hover:bg-white focus:bg-white text-bxs text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md transition-colors duration-200 ">
+                    More info
                 </button>
             </div>
         </section>
-    </section>
 
-    <!--     SECTION Frequently Asked Questions -->
+        <!-- RADIO BUTTONS ITEMS 2 and 3 -->
 
-    <section class=" m-32 w-featureW flex flex-col  place-content-center  mx-auto  gap-14 ">
-        <div class="grid grid-cols-1 items-center justify-items-center gap-4">
-            <h3 class="text-3xl text-blue-950 font-medium text-center">Frequently Asked Questions</h3>
-            <p class="text-bxs text-blue-950/50 font-normal text-center">
-                Here are some of our FAQs. If you have any other questions you’d like
-                answered please feel free to email us.
-            </p>
-        </div>
-        <div class="grid gap-4">
-            <details class="freq__detail group cursor-pointer ">
-                <summary
-                    class="freq__quez pb-4 text-bxs/relaxed text-blue-950 font-normal flex justify-between items-center shrink-0  list-none hover:text-red-400">
-                    What is Bookmark?
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"
-                        class="transition-all duration-300 ease-in text-blue-600 group-open:text-red-400 group-open:scale-y-[-1] ">
-                        <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" />
-                    </svg>
-                </summary>
-                <p class=" freq__text text-bxs/loose text-blue-950/75 ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-                    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-                </p>
-            </details>
-            <div class="w-full h-px bg-blue-950/35"></div>
-            <details
-                class="freq__detail group  cursor-pointer transition-all transition-discrete duration-700 ease-in-out ">
-                <summary
-                    class=" freq__quez pb-4 text-bxs/relaxed text-blue-950 font-normal flex justify-between items-center shrink-0  list-none hover:text-red-400">
-                    How can I request a new broser?
-                    <svg width="18px" height="12px"
-                        class="transition-all duration-300 ease-in text-blue-600 group-open:text-red-400 group-open:scale-y-[-1] ">
-                        <use xlink:href="./assets/images/icon-arrow.svg" />
-                    </svg>
-                </summary>
-                <p class="freq__text text-bxs/loose text-blue-950/75 ">
-                    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
-                    Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-                    ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
-                    Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-                </p>
-            </details>
-            <div class="w-full h-px bg-blue-950/35"></div>
-            <details class="freq__detail group cursor-pointer ">
-                <summary
-                    class="freq__quez pb-4 text-bxs/relaxed text-blue-950 font-normal flex justify-between items-center shrink-0  list-none hover:text-red-400">
-                    Is there a mobile app?
-                    <svg width="18px" height="12px"
-                        class="transition-all duration-300 ease-in text-blue-600 group-open:text-red-400 group-open:scale-y-[-1] ">
-                        <use xlink:href="./assets/images/icon-arrow.svg" />
-                    </svg>
-                </summary>
-                <p class="freq__text text-bxs/loose text-blue-950/75">
-                    Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
-                    urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
-                    sollicitudin ex et ultricies bibendum.
-                </p>
-            </details>
-            <div class="w-full h-px bg-blue-950/35"></div>
-            <details class="freq__detail group cursor-pointer ">
-                <summary
-                    class=" freq__quez pb-4 text-bxs/relaxed text-blue-950 font-normal flex justify-between items-center shrink-0  list-none hover:text-red-400 ">
-                    What about other Chromium browsers?
-                    <svg width="18px" height="12px"
-                        class="transition-all duration-200 ease-in text-blue-600 group-open:text-red-400 group-open:scale-y-[-1]">
-                        <use xlink:href="./assets/images/icon-arrow.svg" />
-                    </svg>
-                </summary>
-                <p class="freq__text text-bxs/loose text-blue-950/75">
-                    Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
-                    vitae neque eget nisl gravida pellentesque non ut velit.
-                </p>
-            </details>
-        </div>
-        <button
-            class=" w-29 h-12 mx-auto  bg-blue-600 text-bxs hover:bg-white focus:bg-white text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md  transition-colors duration-200 ">
-            More info
-        </button>
-    </section>
-
-    <!-- ###### SECTION STAY UP  ######## -->
-
-    <section class="bg-blue-600 py-clamp04 grid place-content-center gap-8 ">
-        <div class="w-clamp03 grid grid-cols-1  place-items-center sm:gap-6">
-            <h4 class="text-xs tracking-aside text-white uppercase ">35,000+ already joined</h4>
-            <h5 class="text-3xl/snug text-white font-medium text-center">Stay up-to-date with what we’re doing </h5>
-        </div>
-        <form id="form__mail" class="flex flex-col gap-4 sm:flex-row transition-all duration-400 ease-in-out " novalidate>
-            <div class="relative ">
-                <input type="email" name="mail" placeholder="Enter your mail address" id="stay__input"
-                    class="relative w-full px-4 py-2  rounded-md bg-blue-50 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 ease-in-out placeholder:text-bxs/relaxed placeholder:text-black/35 placeholder:font-normal sm:w-[18.75rem] z-40  " />
-                <div id="error__icon"
-                    class="absolute right-3 top-1/2 transform -translate-y-1/2 z-50 transition-opacity duration-300 ease-in-out opacity-0 ">
-                    <img src="./assets/images/icon-error.svg" alt="" loading="lazy" decoding="async" width="" height="">
+        <section id="speedy"
+            class=" hidden  w-full max-w-[90rem] mx-auto mt-11 grid grid-cols-1 place-items-center xl:grid-cols-[44.063rem_28.125rem] xl:gap-[7.5rem] xl:mt-18 ">
+            <section
+                class="relative w-full h-full min-h-[16rem]  grid grid-cols-1 content-start  justify-center sm:max-h-[27.188rem] ">
+                <div
+                    class="absolute left-0 bottom-0 w-4/5 sm:w-2/3 lg:4/5  h-4/5 max-h-[22rem] bg-blue-600 rounded-r-full  z-10 ">
                 </div>
-                <div id="error__woops"
-                    class="absolute left-0 top-10/12 w-full px-3 py-1.5 bg-red-400 rounded-md -z-0 transition-transform duration-300 ease-in-out -translate-y-[91%] ">
-                    <span class="text-[0.625rem] text-white tracking-tight font-medium ">Woops, make sure it's an
-                        email</span>
+                <div
+                    class="w-[83%] max-w-[29.25rem]  h-full max-h-96 z-20 mx-auto sm:mb-24 xl:w-full xl:mx-0 xl:justify-self-end xl:max-h-[27.625rem] ">
+                    <img src="./assets/images/illustration-features-tab-2.svg" class="" loading="lazy" decoding="async">
                 </div>
+            </section>
+            <div
+                class="mt-16 mx-auto w-clamp02 grid grid-cols-1 gap-4 items-center justify-items-center xl:justify-items-start xl:h-fit xl:gap-6 xl:m-0 xl:self-center">
+                <h3 class="w-48 text-3xl/snug text-blue-950 text-center font-medium xl:w-full xl:text-start">Intelligent
+                    search</h3>
+                <p class="text-bxs text-blue-950/50 text-center xl:text-start">
+                    Our powerful search feature will help you find saved sites in no time at all.
+                    No need to trawl through all of your bookmarks.
+                </p>
+
+                <button
+                    class="py-3 w-29 bg-blue-600 hover:bg-white focus:bg-white text-bxs text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md transition-colors duration-200 ">
+                    More info
+                </button>
             </div>
-            <button type="submit" id="btnSubmit"
-                class="w-full max-h-12 bg-red-400 py-3 rounded-md text-bxs/snug  text-white font-medium sm:max-w-[7.875rem] hover:cursor-pointer hover:bg-white focus:bg-white focus:text-red-400 hover:text-red-400  hover:outline-2 focus:outline-2 hover:outline-red-400 focus:outline-red-400 ">Contact
-                Us</button>
-        </form>
-    </section>
+        </section>
+
+        <!-- ##########  ITEMS 3  ############V -->
+
+        <section id="easy"
+            class=" hidden w-full max-w-[90rem] mx-auto mt-11 grid grid-cols-1 place-items-center xl:grid-cols-[44.063rem_28.125rem] xl:gap-[7.5rem] xl:mt-18 ">
+            <section
+                class="relative w-full h-full min-h-[16rem]  grid grid-cols-1 content-start  justify-center sm:max-h-[27.188rem] ">
+                <div
+                    class="absolute left-0 bottom-0 w-11/12  sm:w-2/3 lg:11/12  h-4/5 max-h-[22rem] bg-blue-600 rounded-r-full  z-10 ">
+                </div>
+                <div
+                    class="w-[83%] max-w-[27.5rem]  h-full max-h-96 z-20 mx-auto sm:mb-24 xl:w-full xl:mx-0 xl:justify-self-end xl:max-h-[27.625rem]">
+                    <img src="./assets/images/illustration-features-tab-3.svg" class="" loading="lazy" decoding="async">
+                </div>
+            </section>
+            <div
+                class="mt-16 mx-auto w-clamp02 grid grid-cols-1 gap-4 items-center justify-items-center xl:justify-items-start xl:h-fit xl:gap-6 xl:m-0 xl:self-center">
+                <h3 class="w-48 text-3xl/snug text-blue-950 text-center font-medium xl:w-full xl:text-start">Share your
+                    bookmarks</h3>
+                <p class="text-bxs text-blue-950/50 text-center xl:text-start">
+                    Easily share your bookmarks and collections with others. Create a shareable
+                    link that you can send at the click of a button.
+                </p>
+
+                <button
+                    class="py-3 w-29 bg-blue-600 hover:bg-white focus:bg-white text-bxs text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md transition-colors duration-200 ">
+                    More info
+                </button>
+            </div>
+        </section>
+        </section>
+
+        <!-- SECTION DOWNLOAD -->
+
+        <section
+            class="w-full mt-33 mx-auto grid grid-cols-1 gap-10 sm:max-w-smwadd sm:w-clamp05 sm:gap-16 xl:max-w-downxl xl:h-full">
+            <div class="w-featureW  mx-auto grid justify-items-center items-center gap-4">
+                <h3 class="text-3xl text-blue-950 font-medium text-center">Download the extension</h3>
+                <p class="text-bxs/relaxed text-blue-950/50 text-center">
+                    We’ve got more browsers in the pipeline. Please do let us know if you’ve
+                    got a favourite you’d like us to prioritize.
+                </p>
+            </div>
+            <!-- SECTION ADD -->
+            <section
+                class="h-full  transition-all duration-300 ease-in-out grid grid-cols-1  gap-10 sm:grid-cols-3 sm:gap-2 xl:gap-8 lg:grid-cols-[repeat(3,minmax(17.5rem,1fr)] lg:gap-8 lg:h-[28.188rem] ">
+                <div
+                    class="w-full max-w-addxl mx-auto py-8 flex flex-col items-center justify-center gap-6 sm:gap-4 lg:gap-6 self-start ">
+
+                    <img src="./assets/images/logo-chrome.svg" alt="" class="mb-2 " loading="lazy" decoding="async"
+                        width="101px" height="100px">
+                    <div class="">
+                        <h3 class="text-2xl text-blue-950 font-medium sm:text-add lg:text-2xl lg:mb-2">Add to Chrome
+                        </h3>
+                        <p class="text-bxs text-blue-950/50 text-center">Minimum version 62</p>
+                    </div>
+                    <span class=""><img src="./assets/images/bg-dots.svg" alt="" class="" loading="lazy"
+                            decoding="async"></span>
+                    <button
+                        class="px-6 py-3 bg-blue-600 hover:bg-white focus:bg-white text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md transition-colors duration-200 sm:text-addBtn sm:px-2 lg:px-8">
+                        Add & Install Extension
+                    </button>
+                </div>
+                <div
+                    class="w-full max-w-[17.5rem] mx-auto py-8 grid grid-cols-1 items-center justify-items-center gap-6 sm:gap-4 lg:gap-6 lg:self-center">
+                    <img src="./assets/images/logo-firefox.svg" alt="" class="mb-2" loading="lazy" decoding="async"
+                        width="105px" height="100px">
+                    <div class="">
+                        <h3 class="text-2xl text-blue-950 font-medium sm:text-add lg:text-2xl lg:mb-2">Add to Firefox
+                        </h3>
+                        <p class="text-bxs text-blue-950/50 text-center">Minimum version 55</p>
+                    </div>
+                    <span class=""><img src="./assets/images/bg-dots.svg" alt="" class="" loading="lazy"
+                            decoding="async"></span>
+                    <button
+                        class="px-6 py-3 bg-blue-600 hover:bg-white focus:bg-white text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md transition-colors duration-200 sm:text-addBtn sm:px-2 lg:px-8">
+                        Add & Install Extension
+                    </button>
+                </div>
+                <div
+                    class="w-full max-w-[17.5rem] mx-auto py-8 grid grid-cols-1 items-center justify-items-center gap-6 sm:gap-4 lg:gap-6 lg:self-end">
+                    <img src="./assets/images/logo-opera.svg" alt="" class="mb-2" loading="lazy" decoding="async"
+                        width="96px" height="100px">
+                    <div class="">
+                        <h3 class="text-2xl text-blue-950 font-medium sm:text-add lg:text-2xl lg:mb-2">Add to Opera</h3>
+                        <p class="text-bxs text-blue-950/50 text-center">Minimum version 46</p>
+                    </div>
+                    <span class=""><img src="./assets/images/bg-dots.svg" alt="" class="" loading="lazy"
+                            decoding="async"></span>
+                    <button
+                        class="px-6 py-3 bg-blue-600 hover:bg-white focus:bg-white text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md transition-colors duration-200 sm:text-addBtn sm:px-2 lg:px-8">
+                        Add & Install Extension
+                    </button>
+                </div>
+            </section>
+        </section>
+
+        <!--     SECTION Frequently Asked Questions -->
+
+        <section class=" m-32 w-featureW flex flex-col  place-content-center  mx-auto  gap-14 ">
+            <div class="grid grid-cols-1 items-center justify-items-center gap-4">
+                <h3 class="text-3xl text-blue-950 font-medium text-center">Frequently Asked Questions</h3>
+                <p class="text-bxs text-blue-950/50 font-normal text-center">
+                    Here are some of our FAQs. If you have any other questions you’d like
+                    answered please feel free to email us.
+                </p>
+            </div>
+            <div class="grid gap-4">
+                <details class="freq__detail group cursor-pointer ">
+                    <summary
+                        class="freq__quez pb-4 text-bxs/relaxed text-blue-950 font-normal flex justify-between items-center shrink-0  list-none hover:text-red-400">
+                        What is Bookmark?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"
+                            class="transition-all duration-300 ease-in text-blue-600 group-open:text-red-400 group-open:scale-y-[-1] ">
+                            <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" />
+                        </svg>
+                    </summary>
+                    <p class=" freq__text text-bxs/loose text-blue-950/75 ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+                        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                    </p>
+                </details>
+                <div class="w-full h-px bg-blue-950/35"></div>
+                <details
+                    class="freq__detail group  cursor-pointer transition-all transition-discrete duration-700 ease-in-out ">
+                    <summary
+                        class=" freq__quez pb-4 text-bxs/relaxed text-blue-950 font-normal flex justify-between items-center shrink-0  list-none hover:text-red-400">
+                        How can I request a new broser?
+                        <svg width="18px" height="12px"
+                            class="transition-all duration-300 ease-in text-blue-600 group-open:text-red-400 group-open:scale-y-[-1] ">
+                            <use xlink:href="./assets/images/icon-arrow.svg" />
+                        </svg>
+                    </summary>
+                    <p class="freq__text text-bxs/loose text-blue-950/75 ">
+                        Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+                        Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                        ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                    </p>
+                </details>
+                <div class="w-full h-px bg-blue-950/35"></div>
+                <details class="freq__detail group cursor-pointer ">
+                    <summary
+                        class="freq__quez pb-4 text-bxs/relaxed text-blue-950 font-normal flex justify-between items-center shrink-0  list-none hover:text-red-400">
+                        Is there a mobile app?
+                        <svg width="18px" height="12px"
+                            class="transition-all duration-300 ease-in text-blue-600 group-open:text-red-400 group-open:scale-y-[-1] ">
+                            <use xlink:href="./assets/images/icon-arrow.svg" />
+                        </svg>
+                    </summary>
+                    <p class="freq__text text-bxs/loose text-blue-950/75">
+                        Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut
+                        condimentum
+                        urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+                        sollicitudin ex et ultricies bibendum.
+                    </p>
+                </details>
+                <div class="w-full h-px bg-blue-950/35"></div>
+                <details class="freq__detail group cursor-pointer ">
+                    <summary
+                        class=" freq__quez pb-4 text-bxs/relaxed text-blue-950 font-normal flex justify-between items-center shrink-0  list-none hover:text-red-400 ">
+                        What about other Chromium browsers?
+                        <svg width="18px" height="12px"
+                            class="transition-all duration-200 ease-in text-blue-600 group-open:text-red-400 group-open:scale-y-[-1]">
+                            <use xlink:href="./assets/images/icon-arrow.svg" />
+                        </svg>
+                    </summary>
+                    <p class="freq__text text-bxs/loose text-blue-950/75">
+                        Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+                        vitae neque eget nisl gravida pellentesque non ut velit.
+                    </p>
+                </details>
+            </div>
+            <button
+                class=" w-29 h-12 mx-auto  bg-blue-600 text-bxs hover:bg-white focus:bg-white text-white hover:text-blue-600 focus:text-blue-600 hover:outline-2 hover:outline-blue-600 focus:outline-blue-600 cursor-pointer font-medium rounded-md  transition-colors duration-200 ">
+                More info
+            </button>
+        </section>
+
+        <!-- ###### SECTION STAY UP  ######## -->
+
+        <section class="bg-blue-600 py-clamp04 grid place-content-center gap-8 ">
+            <div class="w-clamp03 grid grid-cols-1  place-items-center sm:gap-6">
+                <h4 class="text-xs tracking-aside text-white uppercase ">35,000+ already joined</h4>
+                <h5 class="text-3xl/snug text-white font-medium text-center">Stay up-to-date with what we’re doing </h5>
+            </div>
+            <form id="form__mail" class="flex flex-col gap-4 sm:flex-row transition-all duration-400 ease-in-out "
+                novalidate>
+                <div class="relative ">
+                    <input type="email" name="mail" placeholder="Enter your mail address" id="stay__input"
+                        class="relative w-full px-4 py-2  rounded-md bg-blue-50 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 ease-in-out placeholder:text-bxs/relaxed placeholder:text-black/35 placeholder:font-normal sm:w-[18.75rem] z-40  " />
+                    <div id="error__icon"
+                        class="absolute right-3 top-1/2 transform -translate-y-1/2 z-50 transition-opacity duration-300 ease-in-out opacity-0 ">
+                        <img src="./assets/images/icon-error.svg" alt="" loading="lazy" decoding="async" width=""
+                            height="">
+                    </div>
+                    <div id="error__woops"
+                        class="absolute left-0 top-10/12 w-full px-3 py-1.5 bg-red-400 rounded-md -z-0 transition-transform duration-300 ease-in-out -translate-y-[91%] ">
+                        <span class="text-[0.625rem] text-white tracking-tight font-medium ">Woops, make sure it's an
+                            email</span>
+                    </div>
+                </div>
+                <button type="submit" id="btnSubmit"
+                    class="w-full max-h-12 bg-red-400 py-3 rounded-md text-bxs/snug  text-white font-medium sm:max-w-[7.875rem] hover:cursor-pointer hover:bg-white focus:bg-white focus:text-red-400 hover:text-red-400  hover:outline-2 focus:outline-2 hover:outline-red-400 focus:outline-red-400 ">Contact
+                    Us</button>
+            </form>
+        </section>
+    </main>
 
     <!-- ####### SECTION FOOTER  ############ -->
     <footer class="bg-blue-950 py-[33px] grid grid-cols-1 place-content-center ">

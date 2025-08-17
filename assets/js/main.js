@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Inicio');
     const scrollBody = document.querySelector("body");
     const btnOpen = document.querySelector('#btn-open');
-    const btnLabel = document.querySelector('.btn-label');
+    const btnLabel = document.querySelector('.btn__label');
     const logoBook = document.querySelector('.bookmark__img');
     const circleBook = logoBook.querySelector('.bookCircle');
     const pathBook = logoBook.querySelector('.bookPath');
@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const formMail = document.querySelector('#form__mail');
     const errorWoops = document.querySelector('#error__woops');
     const errorIcon = document.querySelector('#error__icon');
-    const btnSubmit = document.querySelector('#btnSubmit');
     const freqQuez = document.querySelectorAll('.freq__quez');
     const validRegex = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i;
     const mediaMobile = window.matchMedia("(max-width: 39.25em)");
@@ -128,6 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
     /* ########## ACCESSILITY   ############# */
 
     btnOpen.addEventListener('change', () => {
-        btnLabel.setAttribute('aria-expanded', btnOpen.Checked);
+        console.log('btnLabel expanded', btnOpen.checked);
+        btnLabel.setAttribute('aria-expanded', btnOpen.checked);
     });
 });
