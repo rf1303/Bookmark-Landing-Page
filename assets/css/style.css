@@ -1592,6 +1592,11 @@
       justify-self: flex-end;
     }
   }
+  .xl\:pt-29 {
+    @media (width >= 80rem) {
+      padding-top: var(--spacing-29);
+    }
+  }
   .xl\:pt-32 {
     @media (width >= 80rem) {
       padding-top: calc(var(--spacing) * 32);
