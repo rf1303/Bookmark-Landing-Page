@@ -125,9 +125,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     /* ########## ACCESSILITY   ############# */
-
-    btnOpen.addEventListener('change', () => {
-        console.log('btnLabel expanded', btnOpen.checked);
-        btnLabel.setAttribute('aria-expanded', btnOpen.checked);
-    });
+    //
+    // btnOpen.addEventListener('change', () => {
+    //     console.log('btnLabel expanded', btnOpen.checked);
+    //     btnLabel.setAttribute('aria-expanded', btnOpen.checked);
+    // });
 });
