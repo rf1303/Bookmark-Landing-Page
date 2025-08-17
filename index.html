@@ -34,9 +34,9 @@
         </svg>
         <section class="">
             <input type="checkbox" name="btnopen" id="btn-open" class="peer sr-only " />
-            <label for="btn-open"  
+            <label for="btn-open"
                 class="btn__label relative w-6  grid grid-cols-1 gap-1  z-40 cursor-pointer group lg:w-px lg:h-px lg:opacity-0"
-                 aria-label="open and close menu Mobile" >
+                aria-label="open and close menu Mobile">
                 <span
                     class=" line top  w-full h-1 bg-blue-950 rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45] "></span>
                 <span
@@ -416,6 +416,7 @@
             <form id="form__mail" class="flex flex-col gap-4 sm:flex-row transition-all duration-400 ease-in-out "
                 novalidate>
                 <div class="relative ">
+                    <label for="stay__input" class="sr-only">
                     <input type="email" name="mail" placeholder="Enter your mail address" id="stay__input"
                         class="relative w-full px-4 py-2  rounded-md bg-blue-50 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 ease-in-out placeholder:text-bxs/relaxed placeholder:text-black/35 placeholder:font-normal sm:w-[18.75rem] z-40  " />
                     <div id="error__icon"
@@ -425,7 +426,8 @@
                     </div>
                     <div id="error__woops"
                         class="absolute left-0 top-10/12 w-full px-3 py-1.5 bg-red-400 rounded-md -z-0 transition-transform duration-300 ease-in-out -translate-y-[91%] ">
-                        <span class="text-[0.625rem] text-white tracking-tight font-medium ">Woops, make sure it's an
+                        <span class="text-[0.625rem] text-white tracking-tight font-medium ">Woops, make sure it's
+                            an
                             email</span>
                     </div>
                 </div>
