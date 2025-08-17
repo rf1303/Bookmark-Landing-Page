@@ -1283,6 +1283,11 @@
       height: fit-content;
     }
   }
+  .lg\:h-px {
+    @media (width >= 64rem) {
+      height: 1px;
+    }
+  }
   .lg\:w-28 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 28);
@@ -1301,6 +1306,11 @@
   .lg\:w-md {
     @media (width >= 64rem) {
       width: var(--container-md);
+    }
+  }
+  .lg\:w-px {
+    @media (width >= 64rem) {
+      width: 1px;
     }
   }
   .lg\:max-w-\[69rem\] {
@@ -1453,6 +1463,11 @@
   .lg\:text-gray-900 {
     @media (width >= 64rem) {
       color: var(--color-gray-900);
+    }
+  }
+  .lg\:opacity-0 {
+    @media (width >= 64rem) {
+      opacity: 0%;
     }
   }
   .lg\:opacity-100 {
