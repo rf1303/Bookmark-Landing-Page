@@ -1374,11 +1374,6 @@
       background-color: transparent;
     }
   }
-  .lg\:bg-white {
-    @media (width >= 64rem) {
-      background-color: var(--color-white);
-    }
-  }
   .lg\:p-1 {
     @media (width >= 64rem) {
       padding: calc(var(--spacing) * 1);
@@ -1492,6 +1487,16 @@
       }
     }
   }
+  .xl\:order-1 {
+    @media (width >= 80rem) {
+      order: 1;
+    }
+  }
+  .xl\:order-2 {
+    @media (width >= 80rem) {
+      order: 2;
+    }
+  }
   .xl\:m-0 {
     @media (width >= 80rem) {
       margin: calc(var(--spacing) * 0);
@@ -1547,14 +1552,29 @@
       max-width: var(--spacing-downxl);
     }
   }
+  .xl\:grid-cols-\[33\.75rem_45\.938rem\] {
+    @media (width >= 80rem) {
+      grid-template-columns: 33.75rem 45.938rem;
+    }
+  }
   .xl\:grid-cols-\[44\.063rem_28\.125rem\] {
     @media (width >= 80rem) {
       grid-template-columns: 44.063rem 28.125rem;
     }
   }
+  .xl\:justify-end {
+    @media (width >= 80rem) {
+      justify-content: flex-end;
+    }
+  }
   .xl\:justify-items-start {
     @media (width >= 80rem) {
       justify-items: start;
+    }
+  }
+  .xl\:gap-0 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 0);
     }
   }
   .xl\:gap-6 {
@@ -1634,8 +1654,10 @@
 #btn-open:checked~label {
   fill: var(--color-amber-50);
 }
-.aside {
-  background-color: hsl(229, 25%, 25%, .9);
+@media (min-width: 64em) {
+  .nav__bar {
+    translate: 0;
+  }
 }
 summary::-webkit-details-marker {
   display: none;

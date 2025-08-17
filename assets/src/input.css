@@ -100,8 +100,10 @@
     @apply fill-amber-50;
 }
 
-.aside {
-    background-color: hsl(229, 25%, 25%, .9);
+@media (min-width: 64em) {
+    .nav__bar {
+        translate: 0;
+    }
 }
 
 summary::-webkit-details-marker {
