@@ -20,6 +20,7 @@ btnMenu.addEventListener('click', () => {
         logoBook.classList.remove('text-white');
         circleBook.classList.remove('text-white');
         pathBook.classList.remove('fill-gray-600')
+        mainNav.setAttribute('aria-hidden', 'true')
         bodyScrollLockUpgrade.enableBodyScroll(scrollBody);
         btnMenu.focus();
     } else {
@@ -30,6 +31,7 @@ btnMenu.addEventListener('click', () => {
         logoBook.classList.add('text-white');
         circleBook.classList.add('text-white');
         pathBook.classList.add('fill-gray-600')
+        mainNav.setAttribute('aria-hidden', 'false')
         bodyScrollLockUpgrade.disableBodyScroll(scrollBody);
         btnMenu.focus();
     }
