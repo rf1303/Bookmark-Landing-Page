@@ -10,7 +10,7 @@
     <title>Frontend Mentor | Bookmark landing page</title>
     <link href="./assets/css/style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js"></script>
-    <script src="./assets/js/main.js" defer></script>
+    <script type="module" src="./assets/js/main.js" defer></script>
 
 </head>
 
@@ -33,22 +33,16 @@
             </g>
         </svg>
         <section class="">
-            <input type="checkbox" name="btnopen" id="btn-open" class="peer sr-only " />
-            <label for="btn-open"
+            <!-- <input type="checkbox" name="btnopen" id="btn-open" class="peer sr-only " /> -->
+            <button type="button" id="btn__menu"
                 class="btn__label relative w-6  grid grid-cols-1 gap-1  z-40 cursor-pointer group lg:w-px lg:h-px lg:opacity-0"
-                aria-label="open and close menu Mobile">
-                <span
-                    class=" line top  w-full h-1 bg-blue-950 rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45] "></span>
-                <span
-                    class=" line middle  w-full h-1 bg-blue-950  rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45]"></span>
-                <span
-                    class="line bottom  w-full h-1 bg-blue-950  rounded group-hover:border group-hover:border-white group-hover:shadow-[0_0_0_1px_#252a45] "></span>
-            </label>
+                aria-label="Toggle menu Mobile" aria-expanded="false" aria-controls="main__nav">
+                <span class="line w-full h-1 bg-blue-950 rounded "></span>
+                <span class="line  w-full h-1 bg-blue-950  rounded "></span>
+                <span class="line  w-full h-1 bg-blue-950  rounded  "></span>
+            </button>
 
-            <nav
-                class="nav__bar bg-blue-950/90 absolute top-0 left-0 w-px h-px opacity-0 grid grid-cols-1 justify-between items-center translate-x-full transition-transform duration-500 ease-in-out z-30 peer-checked:opacity-100  peer-checked:w-full peer-checked:h-full peer-checked:translate-x-0 peer-checked:py-24 lg:w-md lg:h-fit lg:opacity-100 lg:static lg:bg-transparent lg:translate-x-0 ">
-
-
+            <nav class="nav__bar bg-blue-950/90 absolute top-0 left-0 w-px h-px opacity-0 grid grid-cols-1 justify-between items-center translate-x-full transition-transform duration-500 ease-in-out z-30 lg:w-md lg:h-fit lg:opacity-100 lg:static lg:bg-transparent lg:translate-x-0  " id="main__nav">
 
                 <ul
                     class="w-full h-10 grid grid-cols-1 gap-4 justify-items-center  px-menuH lg:grid-cols-4  lg:bg-transparent lg:items-center lg:h-10  ">
@@ -133,7 +127,7 @@
 
         <!-- SECTION FEATURES -->
 
-        <section class="grid grid-cols-1 gap-4 place-content-center mt-32 mb-8 mx-auto w-featureW  ">
+        <section class="grid grid-cols-1 gap-4 place-content-center mt-32 mb-8 mx-auto w-featureW xl:mt-20 ">
             <h2 class="text-3xl text-blue-950 text-center font-medium sm:text-feat ">Features</h2>
             <p class="text-bxs/relaxed text-blue-950/55 text-center sm:text-lg ">
                 Our aim is to make it quick and easy for you to access your favourite websites.
@@ -263,7 +257,7 @@
         <!-- SECTION DOWNLOAD -->
 
         <section
-            class="w-full mt-33 mx-auto grid grid-cols-1 gap-10 sm:max-w-smwadd sm:w-clamp05 sm:gap-16 xl:max-w-downxl xl:h-full">
+            class="w-full mt-33 mx-auto grid grid-cols-1 gap-10 sm:max-w-smwadd sm:w-clamp05 sm:gap-16 xl:max-w-downxl xl:h-full xl:mt-40">
             <div class="w-featureW  mx-auto grid justify-items-center items-center gap-4">
                 <h3 class="text-3xl text-blue-950 font-medium text-center">Download the extension</h3>
                 <p class="text-bxs/relaxed text-blue-950/50 text-center">

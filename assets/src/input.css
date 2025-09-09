@@ -96,6 +96,26 @@
     background-color: #fff;
 }
 
+.top {
+    transform: rotate(45deg);
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+    background-color: #fff;
+}
+.middle {
+    opacity: 0;
+}
+.bottom {
+    transform: rotate(-45deg);
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+    background-color: #fff;
+}
+.menu__nav--open {
+    @apply w-full h-full py-24 opacity-100; 
+    translate: 0; 
+}
+
 #btn-open:checked~label {
     @apply fill-amber-50;
 }
