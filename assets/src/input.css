@@ -77,25 +77,6 @@
     }
 }
 
-
-#btn-open:checked~label .top {
-    transform: rotate(45deg);
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / -2);
-    background-color: #fff;
-}
-
-#btn-open:checked~label .middle {
-    opacity: 0;
-}
-
-#btn-open:checked~label .bottom {
-    transform: rotate(-45deg);
-    width: var(--x-width);
-    translate: 0 calc(var(--bar-height) / 2);
-    background-color: #fff;
-}
-
 .top {
     transform: rotate(45deg);
     width: var(--x-width);
@@ -163,8 +144,3 @@ summary::marker {
   opacity: 0;
   transform: translateY(0);
 }
-
-
-/* .features__wrap { */
-/* } */
-/* features__title features__wrap*/

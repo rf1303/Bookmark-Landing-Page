@@ -10,7 +10,6 @@ const mediaMobile = window.matchMedia("(max-width: 39.25em)");
 
 
 formMail.addEventListener('input', () => {
-    console.log('input enter');
     errorWoops.classList.remove('error__mail');
     stayInput.classList.remove('error__outline');
     errorIcon.classList.remove('error__visible');
@@ -20,7 +19,6 @@ formMail.addEventListener('input', () => {
 formMail.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    console.log('input submit');
     if (!validRegex.test(stayInput.value)) {
         errorWoops.classList.add('error__mail');
         stayInput.classList.add('error__outline');
@@ -37,10 +35,8 @@ formMail.addEventListener('submit', function(e) {
 
     function mediaForm(e) {
         if (e.matches) {
-            console.log('mediaMobile add-gap-9', e.matches);
             formMail.classList.add('gap-9');
         } else {
-            console.log('mediaMobile remove-gap-9', e.matches);
             formMail.classList.remove('gap-9')
         }
     }

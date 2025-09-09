@@ -2,7 +2,6 @@ import './menu.js';
 import './valid-mail.js';
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Inicio');
     const radioStn = document.querySelectorAll('#simple, #speedy, #easy');
     const radioCheck = document.querySelectorAll('input[name="features"]');
     const freqQuez = document.querySelectorAll('.freq__quez');
